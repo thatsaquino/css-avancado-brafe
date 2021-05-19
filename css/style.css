@@ -49,3 +49,32 @@ a.menu-logo {
   color: #fff;
   font-size: 1.125em; /*18px*/
 }
+
+/*Intro*/
+
+.intro {
+  background: url('../img/bg-intro.jpg') no-repeat center center;
+  background-size: cover; /*definir que imagem sempre seja 100%*/ 
+  padding: 150px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.intro h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.intro h1::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 50px;
+  background: #fff;
+  margin: 10px auto;
+}
+
+.intro p {
+  font-style: italic;
+  font-size: 1.125em;
+}
