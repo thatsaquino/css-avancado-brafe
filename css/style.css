@@ -341,3 +341,33 @@ h2.produtos-carioca::before {
 }
 
 /*Rodapé*/
+
+.rodape {
+  background-color: #d6d3c8;
+  padding: 40px 0;
+}
+
+.rodape-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.rodape-container::after,
+.rodape-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rodape p {
+  float: left;
+  margin: 0 10px;
+  font-size: 1.125em;
+  line-height: 1.4em;
+}
+
+.rodape img {
+  float: right;
+  margin: 0 10px;
+  display: block;
+}
