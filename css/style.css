@@ -219,12 +219,18 @@ h2.produtos-carioca::before {
   padding: 60px 0;
 }
 
+.local-item {
+  clear: both;
+  margin: 60px auto; 
+  /* overflow: hidden; Outro exemplo de clearfix */
+}
+
 .local-item::before,
 .local-item::after {
   content: "";
   display: table;
   clear: both;
-}
+} /*  -----Um tipo de clearfix----- */
 
 .local-item img{
   width: 460px;
@@ -238,4 +244,26 @@ h2.produtos-carioca::before {
   float: left;
   display: block;
   margin: 0 10px;
+}
+
+.local-item h2 {
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+
+.local-item p {
+  font-size: 1.125em;
+  line-height: 1.4em;
+  width: 320px;
+  margin-bottom: 40px;
+}
+
+.local-item a {
+  font-size: 1.125em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid 3px;
+  color: #252525;
+  padding: 10px 30px;
+  font-weight: bold;
 }
