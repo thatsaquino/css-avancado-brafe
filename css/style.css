@@ -55,6 +55,22 @@ a.menu-logo {
   font-size: 1.125em; /*18px*/
 }
 
+@media (max-width: 739px) {
+  .menu-nav {
+    float: none;
+    clear: both;
+  }
+
+  .menu {
+    text-align: center;
+  }
+
+  a.menu-logo {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
 /*Intro*/
 
 .intro {
@@ -82,6 +98,12 @@ a.menu-logo {
 .intro p {
   font-style: italic;
   font-size: 1.125em;
+}
+
+@media (max-width: 739px) {
+  .intro {
+    padding: 60px 0;
+  }
 }
 
 /*Sobre*/
@@ -140,6 +162,29 @@ a.menu-logo {
   max-width: 460px;  
   margin: 20px auto;
 }
+
+@media (min-width: 740px) and (max-width: 980px){
+  
+  .sobre-container {
+    max-width: 720px;
+  }
+  
+  .sobre-item {
+    width: 340px;
+  }
+}
+
+@media (max-width: 739px) {
+  .sobre-container {
+    max-width: 300px;
+  }
+
+  .sobre-item {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
 /*Produtos*/
 
 .produtos {
@@ -215,6 +260,27 @@ h2.produtos-carioca::before {
   text-transform: uppercase;
 }
 
+@media (min-width: 740px) and (max-width: 980px){
+  
+  .produtos-container {
+    max-width: 720px;
+  }
+  
+  .produtos-item {
+    width: 220px;
+  }
+}
+
+@media (max-width: 739px) {
+  .produtos-container {
+    max-width: 300px;
+  }
+
+  .produtos-item {
+    width: 300px;
+    margin: 0 auto 20px auto;
+  }
+}
 
 /*Local*/
 
@@ -271,6 +337,29 @@ h2.produtos-carioca::before {
   color: #252525;
   padding: 10px 30px;
   font-weight: bold;
+}
+
+@media (min-width: 740px) and (max-width: 980px){
+  .local {
+    max-width: 720px;
+  }
+  
+  .local-item > div,
+  .local-item > img{
+    width: 340px;
+  }
+}
+
+@media (max-width: 739px) {
+  .local {
+    max-width: 300px;
+  }
+
+  .local-item > div,
+  .local-item > img{
+    width: 300px;
+    margin: 0px;
+  }
 }
 
 /*Newsletter*/
@@ -340,6 +429,32 @@ h2.produtos-carioca::before {
   cursor: pointer;
 }
 
+@media (min-width: 740px) and (max-width: 980px){
+  .newsletter-container {
+    max-width: 720px;
+  }
+
+  .newsletter-info,
+  .newsletter form,
+  .newsletter input  {
+    width: 340px;
+  }
+
+}
+
+@media (max-width: 739px) {
+  .newsletter-container {
+    max-width: 300px;
+  }
+
+  .newsletter-info,
+  .newsletter form,
+  .newsletter input  {
+    width: 300px;
+    margin: 10px 0 0 0;
+  }
+}
+
 /*Rodapé*/
 
 .rodape {
@@ -370,4 +485,20 @@ h2.produtos-carioca::before {
   float: right;
   margin: 0 10px;
   display: block;
+}
+
+@media (max-width: 739px) {
+  .rodape-container {
+    max-width: 300px;
+  }
+
+  .rodape img {
+    float: none;
+    margin: 10px 0; 
+  }
+
+  .rodape p {
+    float: none;
+    margin: 0;
+  }
 }
